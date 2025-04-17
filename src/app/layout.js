@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Navigation } from "./components/navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,7 +22,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
       <header style={{ textAlign: 'center', marginTop: '2rem', fontSize: '2rem' }}>
-          Welcome to the Next.js demo page
+          {/*Welcome to the Next.js demo page*/}
+          <Navigation />
         </header>
         {children}
         <footer style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '2rem' }}>
